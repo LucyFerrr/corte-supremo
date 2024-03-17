@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Corte Supremo is is a sanctuary for the discerning gentleman, offering a fusion of traditional barbering with a modern twist. Our expert barbers deliver precise cuts, intricate grooming services, and a luxurious experience, setting a new standard in men's grooming."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest"/>
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sql/general.css" />
+    <link rel="stylesheet" href="sql/style.css" />
+    <link rel="stylesheet" href="sql/queries.css"/>
+
+    <script defer="" src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Corte Supremo: Luxury Barbers</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="nav-section">
+        <a href="#"
+          ><img href="#" class="main-logo" src="img/CorteSupremoLogo.png"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a href="#" class="main-nav-link primary-text">Home</a></li>
+            <li><a href="#feature" class="main-nav-link">Features</a></li>
+            <li><a href="#about" class="main-nav-link">About</a></li>
+            <li><a href="#team" class="main-nav-link">Team</a></li>
+            <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+            <li><a href="#testimonials" class="main-nav-link">Gallery</a></li>
+            <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </section>
+
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text-box">
+            <h2 class="subheading">Welcome to Corte Supremo</h2>
+            <h1 class="heading-primary">
+              Where <span class="stroke-text">Elegance</span> Meets
+              <span class="stroke-text">Precision</span>
+            </h1>
+            <p class="hero-text">
+              A sanctuary for the discerning gentleman, offering a fusion of
+              traditional barbering with a modern twist.Our expert barbers
+              deliver precise cuts, intricate grooming services, and a luxurious
+              experience, setting a new standard in men's grooming.
+            </p>
+            <a href="#about" class="CTA-btn-stroke">Learn More About Us</a>
+          </div>
+          <div class="hero-img"></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+
+      <nav class="side-nav">
+        <a href="#" class="side-btn-mobile-nav"><ion-icon class="side-btn" name="arrow-up-outline"></ion-icon></a>
+      </nav>
+
+      <section class="feature-section" id="feature">
+        <div class="feature-container">
+          <h2 class="feature-title">Hair Styles</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem obcaecati officiis eos rerum? Delectus cum qui
+            distinctio quo est repellat iure amet corporis voluptates. In
+            aspernatur tempora aliquam eius quis!
+          </p>
+          <img
+            class="feature-img"
+            src="./img/Feature/hair-styles.avif"
+            alt="hair style features"
+          />
+        </div>
+
+        <div class="feature-container">
+          <h2 class="feature-title">Beard Trim</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem obcaecati officiis eos rerum? Delectus cum qui
+            distinctio quo est repellat iure amet corporis voluptates. In
+            aspernatur tempora aliquam eius quis!
+          </p>
+          <img
+            class="feature-img"
+            src="./img/Feature/beard-trim.avif"
+            alt="hair style features"
+          />
+        </div>
+
+        <div class="feature-container">
+          <h2 class="feature-title">Hot Shave</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem obcaecati officiis eos rerum? Delectus cum qui
+            distinctio quo est repellat iure amet corporis voluptates. In
+            aspernatur tempora aliquam eius quis!
+          </p>
+          <img
+            class="feature-img"
+            src="./img/Feature/hot-shave.avif"
+            alt="hair style features"
+          />
+        </div>
+
+        <div class="feature-container">
+          <h2 class="feature-title">Hair Shampoo</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem obcaecati officiis eos rerum? Delectus cum qui
+            distinctio quo est repellat iure amet corporis voluptates. In
+            aspernatur tempora aliquam eius quis!
+          </p>
+          <img
+            class="feature-img"
+            src="./img/Feature/hair-shampoo.avif"
+            alt="hair style features"
+          />
+        </div>
+      </section>
+
+      <section class="about-us-section" id="about">
+        <div
+          class="container about-us-container grid grid-2-cols grid-2-cols-center"
+        >
+          <div class="about-us-img-container">
+            <img
+              class="about-us-img"
+              src="./img/about-us.avif"
+              alt="barbers tools, razor, scissor, and comb"
+            />
+          </div>
+          <div class="about-us-text-container">
+            <h2 class="subheading">About Corte Supremo</h2>
+            <span class="about-us-text-heading heading-secondary"
+              >Where grooming meets luxury</span
+            >
+            <p class="about-us-text">
+              We pride ourselves on delivering exceptional grooming experiences
+              for the modern gentleman. With a blend of traditional barbering
+              techniques and contemporary styles, our skilled barbers ensure
+              every visit is nothing short of supreme.
+            </p>
+            <div class="about-us-customers-container">
+              <div class="customer-imgs">
+                <img
+                  src="./img/Customers/customer-1.jpg"
+                  alt="first customer"
+                />
+                <img
+                  src="./img/Customers/customer-2.jpg"
+                  alt="first customer"
+                />
+                <img
+                  src="./img/Customers/customer-3.jpg"
+                  alt="first customer"
+                />
+                <img
+                  src="./img/Customers/customer-4.jpg"
+                  alt="first customer"
+                />
+                <img
+                  src="./img/Customers/customer-5.jpg"
+                  alt="first customer"
+                />
+                <img
+                  src="./img/Customers/customer-6.jpg"
+                  alt="first customer"
+                />
+              </div>
+              <p class="about-us-customer-text">
+                <strong>1000+</strong> satisfied customer!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section" id="team">
+        <div class="team-container">
+          <p class="subheading team-subheading">Team</p>
+          <h2 class="heading-secondary team-heading">Our Expert Team</h2>
+          <div class="team-selector">
+            <figure class="barber-item">
+              <img
+                class="team-barbers"
+                src="./img/Barbers/barber1.avif"
+                alt="John Smith"
+              />
+            </figure>
+            <figure class="barber-item">
+              <img
+                class="team-barbers"
+                src="./img/Barbers/barber2.avif"
+                alt="John Smith"
+              />
+            </figure>
+            <figure class="barber-item">
+              <img
+                class="team-barbers"
+                src="./img/Barbers/barber3.avif"
+                alt="John Smith"
+              />
+            </figure>
+          </div>
+          <div class="team-information-container grid">
+            <div class="team-img-container">
+              <img
+                class="team-img"
+                src="/img/Barbers/barber1.avif"
+                alt="John Smith"
+              />
+            </div>
+            <div class="team-description">
+              <h2 class="subheading-medium">John Smith</h2>
+              <p class="team-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur quia, facere nobis veniam fugiat quae eligendi
+                earum odit quas illum doloremque excepturi est voluptatibus
+                obcaecati libero dignissimos vero nisi! Molestias?
+              </p>
+              <ul class="team-logos">
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon
+                      class="team-logo"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a class="CTA-btn-fill" href="#cta">Make Schedule</a>
+            </div>
+            <div class="team-services">
+              <h2 class="services">List of Services</h2>
+              <ul class="list-of-services">
+                <li>Hair Cut</li>
+                <li>Beart Trim</li>
+                <li>Hair Shampoo</li>
+                <li>Clipper Cut</li>
+                <li>Hair Style</li>
+                <li>Face Shave</li>
+                <li>Moustache Trim</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="team-information-container grid team-info-toggle">
+            <div class="team-img-container">
+              <img
+                class="team-img"
+                src="/img/Barbers/barber2.avif"
+                alt="John Smith"
+              />
+            </div>
+            <div class="team-description">
+              <h2 class="subheading-medium">Adatha Ambi</h2>
+              <p class="team-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur quia, facere nobis veniam fugiat quae eligendi
+                earum odit quas illum doloremque excepturi est voluptatibus
+                obcaecati libero dignissimos vero nisi! Molestias?
+              </p>
+              <ul class="team-logos">
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon
+                      class="team-logo"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a class="CTA-btn-fill" href="#cta">Make Schedule</a>
+            </div>
+            <div class="team-services">
+              <h2 class="services">List of Services</h2>
+              <ul class="list-of-services">
+                <li>Hair Cut</li>
+                <li>Beart Trim</li>
+                <li>Hair Shampoo</li>
+                <li>Clipper Cut</li>
+                <li>Hair Style</li>
+                <li>Face Shave</li>
+                <li>Moustache Trim</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="team-information-container grid team-info-toggle">
+            <div class="team-img-container">
+              <img
+                class="team-img"
+                src="/img/Barbers/barber3.avif"
+                alt="John Smith"
+              />
+            </div>
+            <div class="team-description">
+              <h2 class="subheading-medium">Rex Lapis</h2>
+              <p class="team-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur quia, facere nobis veniam fugiat quae eligendi
+                earum odit quas illum doloremque excepturi est voluptatibus
+                obcaecati libero dignissimos vero nisi! Molestias?
+              </p>
+              <ul class="team-logos">
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon class="team-logo" name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon
+                      class="team-logo"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a class="CTA-btn-fill" href="#cta">Make Schedule</a>
+            </div>
+            <div class="team-services">
+              <h2 class="services">List of Services</h2>
+              <ul class="list-of-services">
+                <li>Hair Cut</li>
+                <li>Beart Trim</li>
+                <li>Hair Shampoo</li>
+                <li>Clipper Cut</li>
+                <li>Hair Style</li>
+                <li>Face Shave</li>
+                <li>Moustache Trim</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section" id="testimonials">
+        <div class="testimonial-container grid grid-2-cols">
+          <div class="testimonial-box">
+            <span class="subheading testimonial-subheading">Testimonials</span>
+            <h2 class="heading-secondary testimonial-header">
+              Barbers' Rave Reviews
+            </h2>
+            <div class="testimonials grid grid-2-cols">
+              <figure class="testimonial">
+                <div class="testimonial-header-container">
+                  <img
+                    class="testimonial-img"
+                    src="./img/Customers/ben.jpg"
+                    alt="Ben"
+                  />
+                  <div class="rating">
+                    <ul class="rating-stars">
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                    </ul>
+                    <p class="testimonial-name">Ben Simons</p>
+                  </div>
+                </div>
+                <blockquote class="testimonial-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  et, culpa vel impedit sit.
+                </blockquote>
+              </figure>
+              <figure class="testimonial">
+                <div class="testimonial-header-container">
+                  <img
+                    class="testimonial-img"
+                    src="./img/Customers/dave.jpg"
+                    alt="Ben"
+                  />
+                  <div class="rating">
+                    <ul class="rating-stars">
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                    </ul>
+                    <p class="testimonial-name">Dave Smith</p>
+                  </div>
+                </div>
+                <blockquote class="testimonial-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  et, culpa vel impedit sit.
+                </blockquote>
+              </figure>
+              <figure class="testimonial">
+                <div class="testimonial-header-container">
+                  <img
+                    class="testimonial-img"
+                    src="./img/Customers/hannah.jpg"
+                    alt="Ben"
+                  />
+                  <div class="rating">
+                    <ul class="rating-stars">
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                    </ul>
+                    <p class="testimonial-name">Hannah Banana</p>
+                  </div>
+                </div>
+                <blockquote class="testimonial-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  et, culpa vel impedit sit.
+                </blockquote>
+              </figure>
+              <figure class="testimonial">
+                <div class="testimonial-header-container">
+                  <img
+                    class="testimonial-img"
+                    src="./img/Customers/steve.jpg"
+                    alt="Ben"
+                  />
+                  <div class="rating">
+                    <ul class="rating-stars">
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                      <li><ion-icon class="star" name="star"></ion-icon></li>
+                    </ul>
+                    <p class="testimonial-name">Steve Camel</p>
+                  </div>
+                </div>
+                <blockquote class="testimonial-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  et, culpa vel impedit sit.
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-container">
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery1.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery2.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery3.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery4.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery5.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery6.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery7.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery8.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery9.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery10.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery11.avif"
+                alt="Barber"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/Gallery/gallery12.avif"
+                alt="Barber"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">Price & Plans</h2>
+        </div>
+        <div class="container pricing-container grid grid-2-cols">
+          <div class="pricing-plan pricing-plan-basic">
+            <header class="plan-header">
+              <p class="plan-name">Basic</p>
+              <p class="plan-price"><span>₱</span>80.00</p>
+            </header>
+            <ul class="plan-list">
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Hair Cut</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Beard Trim</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Moustache Trim</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Clipper Cut</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon
+                  class="plan-logo plan-logo-close"
+                  name="close-circle"
+                ></ion-icon
+                ><s>Face Shave</s>
+              </li>
+              <li class="plan-item">
+                <ion-icon
+                  class="plan-logo plan-logo-close"
+                  name="close-circle"
+                ></ion-icon
+                ><s>Hair Style</s>
+              </li>
+            </ul>
+
+            <div class="plan-signup">
+              <a href="#" class="CTA-btn-fill">Get it now</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan-supremo">
+            <header class="plan-header">
+              <p class="plan-name">Supremo</p>
+              <p class="plan-price"><span>₱</span>100.00</p>
+            </header>
+            <ul class="plan-list">
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Hair Cut</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Beard Trim</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Moustache Trim</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Clipper Cut</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Face Shave</span>
+              </li>
+              <li class="plan-item">
+                <ion-icon class="plan-logo" name="checkmark-circle"></ion-icon
+                ><span>Hair Style</span>
+              </li>
+            </ul>
+
+            <div class="plan-signup">
+              <a href="#" class="CTA-btn-fill">Get it now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="CTA-section" id="cta">
+        <div class="container">
+          <h2 class="CTA-header">Make an appointment</h2>
+          <form class="CTA-form" action="#">
+            <div>
+              <input id="first-name" type="text" placeholder="First Name" required autocomplete="given-name"></input>
+            </div>
+            <div>
+              <input id="last-name" type="text" placeholder="Last Name" required autocomplete="given-name"></input>
+            </div>
+            <div>
+              <input id="mobile-number" type="text" placeholder="Phone" required autocomplete="given-number"></input>
+            </div>
+            <div>
+              <select id="select-where" required>
+                <option value>Select Your Services</option>
+                <option value="hair-cut">Hair Cut</option>
+                <option value="beard-trim">Beard Trim</option>
+                <option value="moustache-trim">Moustache Trim</option>
+                <option value="clipper-cut">Clipper Cut</option>
+                <option value="face-shave">Face Shave</option>
+                <option value="hair-style">Hair Style</option>
+              </select>
+            </div>
+            <button href="#" class="CTA-btn">Schedule</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="container grid grid-footer">
+        <div class="logo-col">
+          <a href="#"><img class="main-logo footer-logo" src="./img/CorteSupremoLogo.png" alt="main logo" /></a>
+          <ul class="team-logos footer-social-logos">
+            <li>
+              <a href="#">
+                <ion-icon class="team-logo" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="team-logo" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon
+                  class="team-logo"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">Copyright &copy; <span class="year">2024</span> by Corte Supremo. Allrights reserved.</p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contact">
+            <p class="address"><ion-icon class="footer-icon" name="location"></ion-icon>San Francisco, Camotes, Cebu</p>
+            <a class="footer-link mobile-number" href="
+            tel:09277345071"><ion-icon class="footer-icon" name="call"></ion-icon>
+            0927 734 5071</a>
+            <a class="footer-link email-address" href="mailto:Jhonlloydluchavez@gmail.com"><ion-icon class="footer-icon" name="mail"></ion-icon>Jhonlloydluchavez@gmail.com</a>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a href="#about" class="footer-link">About Corte Supremo</a></li>
+            <li><a href="#about" class="footer-link">For Business</a></li>
+            <li><a href="#about" class="footer-link">Partners</a></li>
+            <li><a href="#team" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a href="#cta" class="footer-link">Create account</a></li>
+            <li><a href="#cta" class="footer-link">Sign in</a></li>
+            <li><a href="#cta" class="footer-link">Make appointment</a></li>
+            <li><a href="#cta" class="footer-link">Mobile app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Help center</a></li>
+            <li><a href="#" class="footer-link">Privacy and policy</a></li>
+            <li><a href="#" class="footer-link">Terms and conditions</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
+  </body>
+</html>

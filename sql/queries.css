@@ -1,0 +1,261 @@
+/*********************/
+/* BELOW 1344px (Smaller Desktops) */
+/* CALCULATION: 1350/16 = 84.375 */
+/*********************/
+
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .team-img {
+    width: 80%;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials {
+    column-gap: 6.4rem;
+  }
+
+  .testimonial-box {
+    padding: 8rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.7rem;
+  }
+
+  .CTA-form input {
+    padding: 1.2rem;
+  }
+}
+
+/*********************/
+/* BELOW 1344px (Smaller Desktops) */
+/* CALCULATION: 1350/16 = 84.375 */
+/*********************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+}
+
+/***********************/
+/* BELOW 944px (Tablets) */
+/* CALCULATION: 950 / 16 = 59.375em*/
+/***********************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-section {
+    margin: 0 auto;
+  }
+
+  .hero-container {
+    padding: 0 9.6rem;
+    gap: 8rem;
+  }
+
+  .about-us-container {
+    display: grid;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .CTA-form {
+    display: grid;
+  }
+
+  .CTA-form select {
+    font-size: 1.95rem;
+  }
+
+  /* MOBILE NAV */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1;
+  }
+
+  .nav-open .btn-mobile-nav {
+    z-index: 2;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #333;
+  }
+
+  .primary-text:link,
+  .primary-text:visited {
+    color: #ebb000 !important;
+  }
+}
+
+/***********************/
+/* BELOW 704px (Smaller Tablets) */
+/* CALCULATION: 704 / 16 = 44em*/
+/* Default Value: 44em */
+/* Changed value: 48.75 */
+/***********************/
+
+@media (max-width: 48.75em) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .heading-secondary {
+    font-size: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .team-information-container {
+    padding: 8rem 9.6rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/***********************/
+/* BELOW 544px (Phones) */
+/* CALCULATION: 544 / 16 = 34em*/
+/***********************/
+
+@media (max-width: 34em) {
+  .feature-section {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-container {
+    padding-bottom: 12.8rem;
+  }
+
+  .feature-img {
+    width: 30%;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-customers-container {
+    justify-content: center;
+  }
+
+  .team-information-container {
+    grid-template-columns: 1fr;
+  }
+
+  .team-img-container {
+    justify-items: center;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan {
+    width: 75%;
+  }
+
+  .pricing-container {
+    gap: 3.2rem;
+  }
+
+  .pricing-plan-basic {
+    justify-self: center;
+  }
+
+  .pricing-plan-supremo {
+    justify-self: center;
+  }
+}

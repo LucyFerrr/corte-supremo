@@ -1,0 +1,281 @@
+/* 
+
+--- 01 TYPHOGRAPHY SYSTEM ---
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-FONT WEIGHT:
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+-LINE HEIGHT:
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph Default: 1.6
+Large: 1.8
+
+-LETTER SPACING
+-0.5px
+0.75px
+
+
+--- 02 COLORS ---
+
+-Primary: #ffbf00
+
+-Tints: 
+
+-Shades: #ebb000
+
+-Accents: 
+
+-Greys:
+#ddd
+#aaa
+#999
+#888
+#767676;
+#6f6f6f (lightest grey allowed on #fdf2e9.)
+#555
+#333
+
+--- 05 SHADOWS ---
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.6);
+
+
+--- 06 BORDER_RADIUS ---
+Default: 9px
+11px
+
+--- 07 WHITESPACE ---
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* Universal Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* Font Designs */
+.subheading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffbf00;
+  margin-bottom: 1.4rem;
+  display: block;
+}
+
+.subheading-medium {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* padding: 1.6rem 0 0 0; */
+  margin-bottom: 1.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.stroke-text {
+  color: #ebb000;
+}
+
+.primary-text,
+.primary-text:link,
+.primary-text:visited {
+  color: rgba(255, 191, 0, 0.7) !important;
+}
+
+.primary-text:active,
+.primary-text:hover {
+  color: #fff !important;
+}
+
+/* Header Designs */
+
+.main-logo {
+  height: 3.4rem;
+}
+
+.main-header {
+  height: 98vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/header-background.avif);
+  background-size: cover;
+  position: relative;
+}
+
+/* Buttons */
+
+.CTA-btn-stroke:link,
+.CTA-btn-stroke:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ffbf00;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid #ffbf00;
+  transition: all 0.3s;
+}
+
+.CTA-btn-stroke:hover,
+.CTA-btn-stroke:active {
+  color: #fff;
+}
+
+.CTA-btn-fill:link,
+.CTA-btn-fill:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #ebb000;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.CTA-btn-fill:hover,
+.CTA-btn-fill:active {
+  background-color: #ffbf00;
+}
+
+.CTA-btn,
+.CTA-btn:link,
+.CTA-btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #ebb000;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.CTA-btn:hover,
+.CTA-btn:active {
+  background-color: #ffbf00;
+}
+
+/* SIDE NAV */
+
+.side-nav {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  transform: translateY(-50%);
+  z-index: 9999; /* Ensure it appears above other content */
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.side-nav-vis {
+  opacity: 1;
+}
+
+.side-btn-mobile-nav {
+  border-radius: 50%;
+  background-color: rgba(235, 176, 0, 0.295);
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+.side-btn-mobile-nav:hover {
+  background-color: #ebb000;
+}
+
+.side-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.5rem;
+  color: #fff;
+}
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2-cols-center {
+  align-items: center;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ffbf00;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
