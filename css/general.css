@@ -141,7 +141,7 @@ body {
 .main-header {
   height: 98vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/header-background.avif);
+    url(../img/header-background.jpg);
   background-size: cover;
   position: relative;
 }
