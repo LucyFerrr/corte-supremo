@@ -4,6 +4,10 @@
 /*********************/
 
 @media (max-width: 84em) {
+  .main-header {
+    background-position: center center;
+  }
+
   .hero-container {
     max-width: 120rem;
   }
@@ -65,6 +69,10 @@
 /* CALCULATION: 950 / 16 = 59.375em*/
 /***********************/
 @media (max-width: 59em) {
+  .main-header {
+    background-position: center center;
+  }
+
   html {
     font-size: 50%;
   }
@@ -158,6 +166,10 @@
   .primary-text:visited {
     color: #ebb000 !important;
   }
+
+  .cta-section {
+    background-position: center center;
+  }
 }
 
 /***********************/
@@ -168,6 +180,10 @@
 /***********************/
 
 @media (max-width: 48.75em) {
+  .main-header {
+    background-position: center center;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -203,6 +219,10 @@
     grid-column: span 2;
     margin-bottom: 3.2rem;
   }
+
+  .cta-section {
+    background-position: center center;
+  }
 }
 
 /***********************/
@@ -211,6 +231,10 @@
 /***********************/
 
 @media (max-width: 34em) {
+  .main-header {
+    background-position: center center;
+  }
+
   .feature-section {
     grid-template-columns: 1fr;
   }
@@ -220,7 +244,7 @@
   }
 
   .feature-img {
-    width: 30%;
+    width: 25%;
   }
 
   .grid-2-cols {
@@ -257,5 +281,45 @@
 
   .pricing-plan-supremo {
     justify-self: center;
+  }
+
+  .cta-section {
+    background-position: center center;
+  }
+}
+
+/***********************/
+/* BELOW 544px (Phones) */
+/* CALCULATION: 414/ 16 = 34em*/
+/***********************/
+
+@media (max-width: 25.87em) {
+  .main-header {
+    background-position: center center;
+  }
+
+  .hero-container {
+    padding: 2.5rem;
+  }
+
+  .plan-name {
+    font-size: 1.6rem;
+  }
+
+  .plan-price {
+    font-size: 4.6rem;
+  }
+
+  .plan-item {
+    font-size: 1.8rem;
+  }
+
+  .pricing-plan-supremo:before {
+    right: -30%;
+    font-size: 1.4rem;
+  }
+
+  .cta-section {
+    background-position: center center;
   }
 }
