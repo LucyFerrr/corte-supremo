@@ -235,6 +235,10 @@
     background-position: center center;
   }
 
+  .hero-container {
+    padding: 0 5rem;
+  }
+
   .feature-section {
     grid-template-columns: 1fr;
   }
@@ -285,6 +289,10 @@
 
   .cta-section {
     background-position: center center;
+  }
+
+  .pricing-plan-supremo:before {
+    right: -25%;
   }
 }
 
